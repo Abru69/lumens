@@ -50,6 +50,9 @@
             "development": { "buildTarget": "lumen-systems:build:development" }
           },
           "defaultConfiguration": "development"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
