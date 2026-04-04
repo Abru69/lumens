@@ -80,9 +80,7 @@ export class FooterComponent {
   readonly currentYear = new Date().getFullYear();
 
   readonly socialLinks = [
-    { href: '#', icon: 'ph ph-linkedin-logo', label: 'LinkedIn' },
-    { href: '#', icon: 'ph ph-github-logo', label: 'GitHub' },
-    { href: '#', icon: 'ph ph-twitter-logo', label: 'Twitter' },
+    { href: 'https://github.com/Abru69', icon: 'ph ph-github-logo', label: 'GitHub' },
   ];
 
   readonly serviceLinks = [
