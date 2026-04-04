@@ -49,21 +49,21 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
       class="py-24 relative"
       aria-labelledby="contacto-heading"
     >
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-purple-900/20 z-0" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-sakura/20 z-0" aria-hidden="true"></div>
 
-      <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center glass-card p-12 lg:p-20 border-purple-500/30">
+      <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center glass-card p-12 lg:p-20 border-slate-200">
 
         <!-- Heading -->
         <h2
           id="contacto-heading"
           appReveal
-          class="text-4xl lg:text-5xl font-bold mb-6 text-white"
+          class="text-4xl lg:text-5xl font-bold mb-6 text-slate-900"
         >
           ¿Listo para transformar tu empresa?
         </h2>
 
-        <p appReveal [revealDelay]="100" class="text-xl text-gray-300 mb-10">
-          Alan Herrera y el equipo de Lumen Systems están listos para analizar
+        <p appReveal [revealDelay]="100" class="text-xl text-slate-500 mb-10">
+          Alan Herrera y el equipo de AltusDev están listos para analizar
           tu caso y proponerte la mejor arquitectura tecnológica.
         </p>
 
@@ -86,8 +86,8 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
               formControlName="email"
               placeholder="Tu correo electrónico profesional"
               autocomplete="email"
-              [ngClass]="isEmailInvalid ? 'border-red-500' : 'border-white/10'"
-              class="w-full px-5 py-4 bg-black/50 border rounded-xl text-white placeholder-gray-500 focus:outline-none transition-colors"
+              [ngClass]="isEmailInvalid ? 'border-red-500' : 'border-slate-200'"
+              class="w-full px-5 py-4 bg-white/80 border rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none transition-colors"
               [attr.aria-invalid]="isEmailInvalid"
               aria-describedby="email-error"
             />
@@ -97,7 +97,7 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
               <p
                 @fadeInUp
                 id="email-error"
-                class="mt-2 text-sm text-red-400 text-left"
+                class="mt-2 text-sm text-red-600 text-left"
                 role="alert"
               >
                 @if (emailControl?.errors?.['required']) {
@@ -137,12 +137,12 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 
           <!-- Status messages -->
           @if (submitStatus() === 'success') {
-            <p @fadeInUp class="text-sm text-green-400" role="status">
+            <p @fadeInUp class="text-sm text-green-600" role="status">
               ✓ Recibimos tu solicitud. Te contactaremos en menos de 24 horas laborables.
             </p>
           }
           @if (submitStatus() === 'error') {
-            <p @fadeInUp class="text-sm text-red-400" role="alert">
+            <p @fadeInUp class="text-sm text-red-600" role="alert">
               Hubo un error al enviar tu solicitud. Por favor intenta nuevamente.
             </p>
           }
@@ -151,7 +151,7 @@ type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
         <p
           appReveal
           [revealDelay]="300"
-          class="text-sm text-gray-500 mt-6"
+          class="text-sm text-slate-400 mt-6"
         >
           Responderemos en menos de 24 horas laborables.
         </p>

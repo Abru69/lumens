@@ -15,7 +15,7 @@ export class ContactService {
   private readonly http = inject(HttpClient);
 
   // Replace with your actual API endpoint
-  private readonly BASE_URL = 'https://api.lumensystems.mx/v1';
+  private readonly BASE_URL = 'https://api.altusdev.com/v1';
 
   /**
    * Submits the contact/proposal request.

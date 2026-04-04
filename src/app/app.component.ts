@@ -8,6 +8,7 @@ import { ProyectosComponent } from './features/proyectos/proyectos.component';
 import { ProcesoComponent } from './features/proceso/proceso.component';
 import { TecnologiasComponent } from './features/tecnologias/tecnologias.component';
 import { ContactoComponent } from './features/contacto/contacto.component';
+import { SakuraPetalsComponent } from './shared/components/sakura-petals/sakura-petals.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { ContactoComponent } from './features/contacto/contacto.component';
     ProcesoComponent,
     TecnologiasComponent,
     ContactoComponent,
+    SakuraPetalsComponent,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -32,6 +34,7 @@ import { ContactoComponent } from './features/contacto/contacto.component';
       Saltar al contenido principal
     </a>
 
+    <app-sakura-petals />
     <app-navbar />
 
     <main id="main-content">

@@ -11,7 +11,7 @@ import { ProjectCard } from '../../shared/models/models';
   template: `
     <section
       id="proyectos"
-      class="py-24 bg-black relative border-t border-white/5"
+      class="py-24 bg-white relative border-t border-slate-200"
       aria-labelledby="proyectos-heading"
     >
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -19,10 +19,10 @@ import { ProjectCard } from '../../shared/models/models';
         <!-- Header -->
         <div appReveal class="mb-16 md:flex md:justify-between md:items-end">
           <div class="max-w-2xl">
-            <h2 id="proyectos-heading" class="text-4xl font-bold mb-4 text-white">
+            <h2 id="proyectos-heading" class="text-4xl font-bold mb-4 text-slate-900">
               Proyectos Destacados
             </h2>
-            <p class="text-gray-400 text-lg">
+            <p class="text-slate-500 text-lg">
               Explora cómo hemos transformado negocios reales con nuestras
               soluciones tecnológicas a medida.
             </p>
@@ -30,7 +30,7 @@ import { ProjectCard } from '../../shared/models/models';
           <div class="hidden md:block">
             <a
               href="#contacto"
-              class="text-blue-400 hover:text-white transition-colors flex items-center gap-2 text-sm font-semibold"
+              class="text-brand-steel hover:text-slate-900 transition-colors flex items-center gap-2 text-sm font-semibold"
             >
               Ver todos los proyectos
               <i class="ph ph-arrow-right" aria-hidden="true"></i>
@@ -45,7 +45,7 @@ import { ProjectCard } from '../../shared/models/models';
           @for (project of projects; track project.title) {
             <article appReveal class="glass-card overflow-hidden group">
               <!-- Image -->
-              <div class="relative h-64 overflow-hidden bg-zinc-900 border-b border-white/5">
+              <div class="relative h-64 overflow-hidden bg-slate-100 border-b border-slate-200">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" aria-hidden="true"></div>
                 <img
                   [src]="project.imageUrl"
@@ -73,23 +73,23 @@ import { ProjectCard } from '../../shared/models/models';
                   [href]="project.liveUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="absolute top-8 right-8 w-12 h-12 bg-white/5 hover:bg-blue-500 border border-white/10 hover:border-blue-500 rounded-full flex items-center justify-center text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+                  class="absolute top-8 right-8 w-12 h-12 bg-white hover:bg-brand-steel border border-slate-200 hover:border-brand-steel rounded-full flex items-center justify-center text-slate-600 hover:text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                   [attr.aria-label]="'Ver proyecto ' + project.title + ' en vivo'"
                 >
                   <i class="ph ph-arrow-up-right text-xl" aria-hidden="true"></i>
                 </a>
 
-                <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-gradient transition-all pr-16">
+                <h3 class="text-2xl font-bold mb-3 text-slate-900 group-hover:text-gradient transition-all pr-16">
                   {{ project.title }}
                 </h3>
-                <p class="text-gray-400 mb-6 text-sm leading-relaxed pr-12">
+                <p class="text-slate-600 mb-6 text-sm leading-relaxed pr-12">
                   {{ project.description }}
                 </p>
 
                 <!-- Features -->
                 <ul class="flex flex-wrap gap-4 text-sm text-gray-500" aria-label="Características del proyecto">
                   @for (feature of project.features; track feature.label) {
-                    <li class="flex items-center gap-2 bg-white/5 px-3 py-1.5 rounded-lg border border-white/5">
+                    <li class="flex items-center gap-2 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
                       <i [class]="feature.icon + ' ' + feature.iconColor + ' text-lg'" aria-hidden="true"></i>
                       {{ feature.label }}
                     </li>
@@ -103,21 +103,21 @@ import { ProjectCard } from '../../shared/models/models';
           <div
             appReveal
             [revealDelay]="150"
-            class="glass-card overflow-hidden group border-dashed border-white/20 flex flex-col items-center justify-center text-center p-12 min-h-[450px]"
+            class="glass-card overflow-hidden group border-dashed border-slate-300 flex flex-col items-center justify-center text-center p-12 min-h-[450px]"
             role="complementary"
             aria-label="Espacio para tu próximo proyecto"
           >
-            <div class="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-gray-500 group-hover:text-purple-400 transition-colors">
+            <div class="w-16 h-16 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center mb-6 text-slate-400 group-hover:text-brand-sakura_dark transition-colors">
               <i class="ph ph-plus text-2xl" aria-hidden="true"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2 text-white">Tu próximo proyecto</h3>
-            <p class="text-gray-400 text-sm max-w-xs">
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Tu próximo proyecto</h3>
+            <p class="text-slate-500 text-sm max-w-xs">
               Estamos listos para desarrollar la solución tecnológica que escalará
               tu negocio al siguiente nivel.
             </p>
             <a
               href="#contacto"
-              class="mt-6 px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
+              class="mt-6 px-6 py-2.5 rounded-full text-sm font-semibold text-slate-700 bg-slate-100 border border-slate-200 hover:bg-slate-200 transition-colors"
             >
               Cotizar desarrollo
             </a>

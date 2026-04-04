@@ -18,7 +18,7 @@ import { TechItem } from '../../shared/models/models';
         <h2
           id="tecnologias-heading"
           appReveal
-          class="text-xl font-semibold text-gray-400 mb-10 tracking-wider uppercase"
+          class="text-xl font-semibold text-slate-500 mb-10 tracking-wider uppercase"
         >
           Stack Tecnológico Moderno
         </h2>
@@ -33,7 +33,7 @@ import { TechItem } from '../../shared/models/models';
         >
           @for (tech of technologies; track tech.name) {
             <li
-              class="flex items-center gap-2 text-2xl font-bold text-white transition-colors cursor-default"
+              class="flex items-center gap-2 text-2xl font-bold text-slate-400 hover:text-slate-800 transition-colors cursor-default"
               [style.color]="hovered ? tech.hoverColor : ''"
             >
               <i [class]="tech.icon + ' text-4xl'" aria-hidden="true"></i>

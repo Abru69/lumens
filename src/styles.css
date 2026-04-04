@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: #050505;
-  color: #ededed;
+  background-color: #fafafa;
+  color: #334155;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +26,7 @@ body {
 
 /* Gradient Text */
 .text-gradient {
-  background: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+  background: linear-gradient(135deg, #475569 0%, #f472b6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -34,29 +34,31 @@ body {
 
 /* Glassmorphism Cards */
 .glass-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.1);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 .glass-card:hover {
-  border-color: rgba(139, 92, 246, 0.4);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(244, 114, 182, 0.3);
+  background: rgba(255, 255, 255, 0.9);
   transform: translateY(-5px);
-  box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.15);
+  box-shadow: 0 10px 25px -5px rgba(71, 85, 105, 0.1);
 }
 
 /* Premium Buttons */
 .btn-primary {
-  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(71, 85, 105, 0.2);
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 25px rgba(124, 58, 237, 0.5);
+  box-shadow: 0 6px 20px rgba(71, 85, 105, 0.3);
   transform: translateY(-2px);
 }
 
@@ -67,8 +69,8 @@ body {
   z-index: -1;
   background-size: 40px 40px;
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(71, 85, 105, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(71, 85, 105, 0.05) 1px, transparent 1px);
   mask-image: linear-gradient(to bottom, black 20%, transparent 80%);
   -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 80%);
 }
@@ -78,7 +80,7 @@ body {
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
@@ -97,10 +99,10 @@ body {
 
 /* Navbar transition */
 .nav-scrolled {
-  background: rgba(5, 5, 5, 0.8) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(12px) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Pulsing dot */
@@ -117,8 +119,8 @@ body {
 
 /* Selection */
 ::selection {
-  background-color: #8b5cf6;
-  color: white;
+  background-color: #fbcfe8;
+  color: #334155;
 }
 
 /* Scrollbar Styling */
@@ -127,14 +129,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b3b3b;
+  background: #cbd5e1;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7c3aed;
+  background: #94a3b8;
 }

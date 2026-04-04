@@ -45,22 +45,16 @@ import { ScrollService } from '../../core/services/scroll.service';
     >
       <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 group" aria-label="Lumen Systems - Inicio">
-          <div
-            class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl group-hover:rotate-12 transition-transform shadow-[0_0_15px_rgba(139,92,246,0.5)]"
-            aria-hidden="true"
-          >
-            L
-          </div>
-          <span class="font-bold text-xl tracking-tight text-white">Lumen Systems</span>
+        <a href="#" class="flex items-center gap-2 group" aria-label="AltusDev - Inicio">
+          <span class="font-extrabold text-2xl tracking-tight text-slate-900">AltusDev</span>
         </a>
 
         <!-- Desktop Nav Links -->
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400" role="menubar">
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-500" role="menubar">
           @for (link of navLinks; track link.href) {
             <a
               [href]="link.href"
-              class="hover:text-white transition-colors"
+              class="hover:text-slate-900 transition-colors"
               role="menuitem"
             >{{ link.label }}</a>
           }
@@ -78,7 +72,7 @@ import { ScrollService } from '../../core/services/scroll.service';
 
         <!-- Mobile Menu Toggle -->
         <button
-          class="md:hidden text-gray-300 hover:text-white transition-colors"
+          class="md:hidden text-slate-600 hover:text-slate-900 transition-colors"
           (click)="toggleMobileMenu()"
           [attr.aria-expanded]="mobileMenuOpen()"
           aria-controls="mobile-menu"
@@ -92,13 +86,13 @@ import { ScrollService } from '../../core/services/scroll.service';
       <div
         id="mobile-menu"
         [@mobileMenu]="mobileMenuOpen() ? 'open' : 'closed'"
-        class="md:hidden bg-black/95 border-t border-white/10 backdrop-blur-xl"
+        class="md:hidden bg-white/95 border-t border-slate-200 backdrop-blur-xl"
       >
         <div class="max-w-7xl mx-auto px-6 py-4 space-y-3" role="menu">
           @for (link of navLinks; track link.href) {
             <a
               [href]="link.href"
-              class="block text-gray-300 hover:text-white py-2 text-sm font-medium transition-colors"
+              class="block text-slate-600 hover:text-slate-900 py-2 text-sm font-medium transition-colors"
               (click)="closeMobileMenu()"
               role="menuitem"
             >{{ link.label }}</a>

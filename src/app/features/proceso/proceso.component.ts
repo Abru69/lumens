@@ -34,17 +34,17 @@ import { ProcessStep } from '../../shared/models/models';
   template: `
     <section
       id="proceso"
-      class="py-24 bg-zinc-950 border-y border-white/5"
+      class="py-24 bg-slate-50 border-y border-slate-200"
       aria-labelledby="proceso-heading"
     >
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
         <!-- Header -->
         <div appReveal class="text-center mb-16">
-          <h2 id="proceso-heading" class="text-3xl font-bold mb-4 text-white">
+          <h2 id="proceso-heading" class="text-3xl font-bold mb-4 text-slate-900">
             Cómo trabajamos
           </h2>
-          <p class="text-gray-400">
+          <p class="text-slate-500">
             Un proceso estructurado para garantizar el éxito de tu proyecto.
           </p>
         </div>
@@ -53,7 +53,7 @@ import { ProcessStep } from '../../shared/models/models';
         <div class="relative">
           <!-- Connector line (decorative) -->
           <div
-            class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-transparent -translate-y-1/2 z-0"
+            class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-brand-steel/20 via-brand-sakura_dark/20 to-transparent -translate-y-1/2 z-0"
             aria-hidden="true"
           ></div>
 
@@ -65,14 +65,14 @@ import { ProcessStep } from '../../shared/models/models';
                 class="text-center"
               >
                 <div
-                  class="w-16 h-16 mx-auto bg-black border border-white/10 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold text-white"
+                  class="w-16 h-16 mx-auto bg-white border border-slate-200 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold text-slate-900"
                   [style.box-shadow]="'0 0 20px ' + step.glowColor"
                   aria-hidden="true"
                 >
                   {{ step.number }}
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">{{ step.title }}</h3>
-                <p class="text-sm text-gray-400">{{ step.description }}</p>
+                <h3 class="text-lg font-bold text-slate-900 mb-2">{{ step.title }}</h3>
+                <p class="text-sm text-slate-600">{{ step.description }}</p>
               </li>
             }
           </ol>

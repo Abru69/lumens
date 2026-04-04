@@ -10,10 +10,11 @@ module.exports = {
       },
       colors: {
         brand: {
-          dark: '#0a0a0a',
-          light: '#fafafa',
-          accent: '#3b82f6',
-          purple: '#8b5cf6',
+          dark: '#1e293b',
+          light: '#ffffff',
+          steel: '#475569',
+          sakura: '#fbcfe8',
+          sakura_dark: '#f472b6',
         }
       },
       animation: {

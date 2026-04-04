@@ -59,10 +59,10 @@ import { RevealDirective } from '../../core/directives/reveal.directive';
         class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center"
       >
         <!-- Badge -->
-        <div class="hero-item inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium mb-8">
+        <div class="hero-item inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-sakura/50 bg-brand-sakura/20 text-slate-700 text-sm font-medium mb-8">
           <span class="relative flex h-2 w-2" aria-hidden="true">
-            <span class="animate-ping-custom absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            <span class="animate-ping-custom absolute inline-flex h-full w-full rounded-full bg-brand-sakura_dark opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-sakura_dark"></span>
           </span>
           <span>Tecnología clara. Soluciones reales.</span>
         </div>
@@ -77,7 +77,7 @@ import { RevealDirective } from '../../core/directives/reveal.directive';
         </h1>
 
         <!-- Description -->
-        <p class="hero-item text-lg lg:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+        <p class="hero-item text-lg lg:text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
           Diseñamos y desarrollamos sistemas a medida, plataformas web profesionales
           y soluciones tecnológicas que impulsan el crecimiento de empresas exigentes.
         </p>
@@ -93,7 +93,7 @@ import { RevealDirective } from '../../core/directives/reveal.directive';
           </a>
           <a
             href="#servicios"
-            class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-gray-300 bg-white/5 border border-white/10 hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+            class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-slate-600 bg-slate-50 border border-slate-200 hover:bg-slate-100 transition-colors flex items-center justify-center gap-2"
           >
             Ver nuestros servicios
           </a>
@@ -101,11 +101,11 @@ import { RevealDirective } from '../../core/directives/reveal.directive';
 
         <!-- Hero Image -->
         <div @imageFadeIn class="mt-20 relative mx-auto max-w-5xl">
-          <div class="rounded-2xl border border-white/10 bg-black/50 p-2 shadow-2xl shadow-purple-900/20 backdrop-blur-sm">
+          <div class="rounded-2xl border border-slate-200 bg-white/80 p-2 shadow-2xl shadow-brand-sakura/20 backdrop-blur-sm">
             <img
               src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200&h=600"
-              alt="Vista previa del dashboard de Lumen Systems mostrando una interfaz moderna de desarrollo"
-              class="rounded-xl opacity-80 border border-white/5"
+              alt="Vista previa del dashboard de AltusDev mostrando una interfaz moderna de desarrollo"
+              class="rounded-xl opacity-90 border border-slate-100"
               width="1200"
               height="600"
               loading="eager"
