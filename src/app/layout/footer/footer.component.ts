@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
           <!-- Brand -->
           <div class="md:col-span-2">
             <a href="#" class="flex items-center gap-2 mb-4" aria-label="AltusDev - Inicio">
-              <img src="assets/altusdev-logo.png" alt="AltusDev Logo" class="h-12 w-auto" />
+              <img src="images/logo.png" alt="AltusDev Logo" class="h-12 w-auto" />
             </a>
             <p class="text-slate-500 text-sm max-w-sm mb-6">
               Tecnología clara. Soluciones reales.<br>
